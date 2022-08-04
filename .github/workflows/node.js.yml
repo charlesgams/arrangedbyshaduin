@@ -20,6 +20,10 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - uses: pnpm/action-setup@v2.2.2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
