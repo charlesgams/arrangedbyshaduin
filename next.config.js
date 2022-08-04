@@ -4,6 +4,7 @@ const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
   experimental: {
     images: {
       unoptimized: true,
