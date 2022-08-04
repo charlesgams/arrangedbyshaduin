@@ -1,0 +1,106 @@
+@use './colors'
+
+.header
+  position: fixed
+  height: 140px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: colors.$primary-color
+
+  .header-inner
+    display: flex
+    flex-direction: column
+    gap: 24px
+
+    .header-logo
+      display: flex
+      flex-direction: column
+      gap: 4px
+
+      .header-img
+        position: relative
+        height: 24px
+        width: 100%
+        min-width: 110px
+
+
+.main
+  display: flex
+  flex-direction: column 
+  gap: 96px
+  align-items: center
+  justify-content: center
+  padding: 172px 16px 96px
+
+  .card-container
+    display: flex
+    flex-direction: column
+    gap: 40px
+
+    .card
+      box-sizing: border-box
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      gap: 32px
+      border-radius: 8px
+      width: 343px
+      height: 343px
+      background: colors.$secondary-color
+      box-shadow: 2px 1px 5px 5px rgba(15, 15, 15, 0.42)
+      padding: 32px
+
+      .prices
+        width: 100%
+
+        .prices-items
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+
+.references
+  display: flex
+  flex-direction: column
+  gap: 32px
+
+  .references-songs
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+.footer
+  position: fixed
+  width: 100%
+  height: 80px
+  bottom: 0
+  left: 0
+  display: flex
+  gap: 52px
+  justify-content: center
+  align-items: center
+  background: colors.$primary-color
+
+  & > span
+    padding: 8px 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 4px
+    background: colors.$secondary-color
+    gap: 8px
+    cursor: pointer
+    
+    .icon
+      position: relative
+      width: 20px
+      height: 20px
+
+  .footer-instagram
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+   
+  .footer-mail
+    background: colors.$secondary-color

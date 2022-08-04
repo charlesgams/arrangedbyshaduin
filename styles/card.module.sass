@@ -1,0 +1,35 @@
+@use './colors'
+
+.card
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 32px
+  border-radius: 8px
+  width: 343px
+  height: 343px
+  background: colors.$secondary-color
+  box-shadow: 2px 1px 5px 5px rgba(15, 15, 15, 0.42)
+  padding: 32px
+  
+  .tags
+    display: flex
+    gap: 8px
+
+    .tag
+      padding: 4px 8px
+      background: colors.$primary-color
+      border-radius: 4px 
+
+  .prices
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+    .prices-items
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center

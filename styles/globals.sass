@@ -1,0 +1,64 @@
+@use './colors'
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@300;400;500&display=swap')
+
+// Fonts
+p
+
+.title
+  font-family: 'Rubik'
+  font-style: normal
+  font-weight: 400
+  font-size: 61px
+  line-height: 72px
+  text-align: center
+  letter-spacing: -0.5px
+  color: colors.$neutral-color
+
+.tag-text
+  font-family: 'Karla'
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  line-height: 15px
+  letter-spacing: 0.4px
+  color: colors.$neutral-color
+
+
+.subtitle
+  font-family: 'Rubik'
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  letter-spacing: 0.15px
+  color: colors.$neutral-color
+
+.price
+  font-family: 'Rubik'
+  font-style: normal
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  letter-spacing: 0.15px
+  color: colors.$neutral-color
+
+// Globals
+
+*
+  margin: 0
+  padding: 0
+  text-align: center
+
+html, body
+  background: colors.$primary-color
+  position: relative
+
+.default
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 40px
