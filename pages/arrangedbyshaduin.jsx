@@ -141,7 +141,6 @@ export default function ArrangedBysShaduin() {
               copyMail();
               e.preventDefault();
             }}
-            ref={copyBtn}
             className={`price ${styles["footer-mail"]}`}
           >
             <span className={styles.icon}>
