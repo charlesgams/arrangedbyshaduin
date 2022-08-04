@@ -28,7 +28,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         version: 6.0.2
-    - run: pnpm ci
+    - run: pnpm i
     - run: pnpm run build 
     - run: pnpm export
     - name: Deploy 🚀
