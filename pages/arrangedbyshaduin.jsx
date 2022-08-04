@@ -21,7 +21,7 @@ export default function ArrangedBysShaduin() {
       <Head>
         <title>Arranged By Shaduin : Mix & Mastering</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <header className={styles.header}>
         <div className={styles["header-inner"]}>

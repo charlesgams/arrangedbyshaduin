@@ -6,7 +6,7 @@ export default function Custom404() {
       <Head>
         <title>Glitch Kids: Under Construction</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <div className="default">
         <p className="title">🚧</p>
@@ -14,7 +14,9 @@ export default function Custom404() {
         <p className="price">
           Glitch Kids
           <br />
-          🥷🏾 C&apos;est pour bientôt ne t&apos;inquiete pas 🥷🏾
+          C&apos;est pour bientôt ne t&apos;inquiete pas
+          <br />
+          🥷🏾
         </p>
       </div>
     </div>
