@@ -14,7 +14,7 @@ export default function Custom404() {
         <p className="price">
           Glitch Kids
           <br />
-          🥷🏾 C'est pour bientôt ne t'inquiete pas 🥷🏾
+          🥷🏾 C&apos;est pour bientôt ne t&apos;inquiete pas 🥷🏾
         </p>
       </div>
     </div>

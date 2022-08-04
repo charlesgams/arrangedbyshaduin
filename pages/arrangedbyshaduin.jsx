@@ -3,10 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/arrangedbyshaduin.module.sass";
 import Card from "../components/Card";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
-export default function arrangedBysShaduin() {
-  const copyBtn = useRef();
+export default function ArrangedBysShaduin() {
   const [copy, setCopy] = useState(false);
 
   const copyMail = () => {
