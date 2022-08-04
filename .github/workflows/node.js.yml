@@ -24,6 +24,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
@@ -32,4 +33,5 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         folder: build
