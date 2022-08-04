@@ -20,16 +20,13 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: pnpm/action-setup@v2.2.2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm i
-    - run: npm run build 
-    - run: npm export
+        version: 6.0.2
+    - run: pnpm ci
+    - run: pnpm run build 
+    - run: pnpm export
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
